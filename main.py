@@ -34,10 +34,10 @@ def compute_glcm_features(image_path):
 
 
 # Load the trained MLP classifier model from a file
-model_filename = 'Feature_Extraction/mlp_classifier_model.joblib'
+model_filename = './model/mlp_classifier_model.joblib'
 loaded_mlp_classifier = joblib.load(model_filename)
 
-image_path = './Feature_Extraction/data/NOCORROSION/100e35cf19.jpg'
+image_path = './data/NOCORROSION/100e35cf19.jpg'
 target_size = (256, 256)
 
 image = Image.open(image_path)
